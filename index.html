@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1>Registration Form</h1>
+    <form onsubmit="return registrationForm()" action="./index1.html">
+        <div class="input-group">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" style="text-transform: uppercase;" placeholder="Enter your name">
+        </div>
+        
+        <div class="input-group">
+            <label for="father_name">Father's Name:</label>
+            <input type="text" name="father_name" id="father_name" style="text-transform: uppercase;" placeholder="Enter your father's name">
+        </div>
+
+        <div class="input-group">
+            <label for="gender">Gender:</label>
+            <div class="gender-group">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="location">Location:</label>
+            <select id="location" name="location">
+                <option value="city1">Select Country</option>
+                <option value="city2">Afghanistan</option>
+                <option value="city3">Australia</option>
+                <option value="city4">Brazil</option>
+                <option value="city5">Canada</option>
+                <option value="city6">China</option>
+                <option value="city7">India</option>
+                <option value="city8">Japan</option>
+                <option value="city9">Kuwait</option>
+                <option value="city10">Malaysia</option>
+                <option value="city11">Pakistan</option>
+                <option value="city12">Saudi Arabia</option>
+                <option value="city13">Turkey</option>
+                <option value="city14">UAE</option>
+                <option value="city15">UK</option>
+                <option value="city16">US</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="contact">Contact:</label>
+            <input type="text" name="contact" id="contact" placeholder="Enter your contact number">
+        </div>
+
+        <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+        </div>
+
+        <div class="input-group">
+            <label for="password">Password:</label>
+            <div class="password-container">
+                <input type="password" name="password" id="password" placeholder="Enter your password">
+                <input type="checkbox" id="showPassword" class="show-password">
+                <label for="showPassword" class="show-password-label">Show</label>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="conf_pass">Confirm Password:</label>
+            <div class="password-container">
+                <input type="password" name="confirm_password" id="conf_pass" placeholder="Confirm your password">
+                <input type="checkbox" id="showConfirmPassword" class="show-password">
+                <label for="showConfirmPassword" class="show-password-label">Show</label>
+            </div>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>

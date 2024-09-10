@@ -1,0 +1,123 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e0e7ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    color: #4a90e2;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 12px;
+    font-style: oblique;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333333;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    outline: none;
+    background-color: #eef3ff;
+}
+
+button {
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4a90e2;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357ab7;
+}
+
+.gender-group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.gender-group input {
+    width: auto;
+}
+
+.gender-group label {
+    font-weight: normal;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container input[type="checkbox"] {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    cursor: pointer;
+}
+
+.password-container .show-password-label {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.password-container input[type="text"] ~ .show-password-label {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    form {
+        font-size: 14px;
+    }
+}
